@@ -33,13 +33,13 @@ const Body2 = () => {
 
                 <div className="col-6 d-flex">
 
-                    <div className=" col-8 border">
+                    <div className=" col-8 bg-white border">
                        
                             <div className='header'>
                                 <div className='links'>
                                     <a
                                         className='btn btn-gh'
-                                        href='https://github.com/reactchartjs/react-chartjs-2/blob/master/example/src/charts/Polar.js'
+                                        href='https://github.com/mdazim14'
                                     >
                                         Github Source
                                     </a>

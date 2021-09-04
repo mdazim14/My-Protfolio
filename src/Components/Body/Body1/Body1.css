@@ -1,0 +1,17 @@
+.textAnimation{
+    display: inline-block;
+    text-align: center;
+    width: 0ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: text 5s steps(20) infinite;
+    border-right: 4px solid rgb(236, 155, 6);
+}
+@keyframes text {
+    0% {
+        width: 0ch;
+    }
+    50%{
+        width: 23ch;
+    }
+}

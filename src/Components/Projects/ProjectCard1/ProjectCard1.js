@@ -10,6 +10,8 @@ import Typography from '@material-ui/core/Typography';
 
 import ProjectImg from '../../../images/Project2.jpeg';
 
+import './ProjectCard1.css';
+
 const useStyles = makeStyles({
     root: {
       maxWidth: 345,
@@ -36,7 +38,7 @@ export default function ProjectCard1() {
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
 
-                <ul>
+                <ul className="uiLi">
                     <li>Individual Admin Panel and User Panel.</li>
                     <li>Firebase sign-up and the custom sign-up form are available.</li>
                     <li>Users can order any services and buy products and see their all order list and their order current status.</li>
@@ -47,7 +49,7 @@ export default function ProjectCard1() {
             </Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions>
+        <CardActions className="p-3">
           <Button size="small" color="primary">
             ReactJs
           </Button>

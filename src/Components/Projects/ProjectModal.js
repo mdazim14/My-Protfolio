@@ -4,6 +4,8 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 
+import Button from '@material-ui/core/Button';
+
 const useStyles = makeStyles((theme) => ({
   modal: {
     display: 'flex',
@@ -31,10 +33,12 @@ export default function TransitionsModal() {
   };
 
   return (
-    <div>
-      <button type="button" onClick={handleOpen}>
-       <h4> See More Projects</h4>
-      </button>
+    <div >
+      <div className="text-center">
+      <Button className="m-5" type="button" onClick={handleOpen} variant="outlined" color="secondary">
+            See all projects
+      </Button>
+      </div>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -49,16 +53,16 @@ export default function TransitionsModal() {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h1 className="text-center border">ALL PROJECTS</h1>
+            <h1 className="text-center  border">ALL PROJECTS</h1>
             <div className="d-flex p-5 justify-content-center">
 
-              <div className="m-3 p-3 border">
+              <div className="m-3 col-4 p-3 border">
                 <h1>box1</h1>
               </div>
-              <div className="m-3 p-3 border">
+              <div className="m-3 col-4  p-3 border">
                 <h1>box2</h1>
               </div>
-              <div className="m-3 p-3 border">
+              <div className="m-3 col-4  p-3 border">
                 <h1>box3</h1>
               </div>
 
